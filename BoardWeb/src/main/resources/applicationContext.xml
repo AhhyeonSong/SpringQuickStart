@@ -9,5 +9,5 @@
 	<!-- bean을 등록하지 않고 자동으로 생성
 	 @Component가 설정된 클래스들을 자동으로 객체 생성한다 -->
 	<context:component-scan base-package="polymorphism"></context:component-scan>
-	<bean id="tv" class="polymorphism.LgTV"></bean>
+	
 </beans>

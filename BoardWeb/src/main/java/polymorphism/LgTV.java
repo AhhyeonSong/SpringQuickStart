@@ -1,12 +1,17 @@
 package polymorphism;
 
+import javax.annotation.Resource;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Component;
 
 @Component("tv")
 public class LgTV implements TV{
 	//컨테이너가 SonySpeaker 객체를 speaker 변수에 자동으로 할당
 	@Autowired
+	@Qualifier("apple")
 	private Speaker speaker;
 	
 	public LgTV() {
