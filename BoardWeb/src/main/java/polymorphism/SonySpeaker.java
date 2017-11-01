@@ -1,9 +1,7 @@
 package polymorphism;
 
-import org.springframework.stereotype.Component;
-
 //SonySpeaker 객체가 메모리에 생성되어 있어야 한다.
-@Component("sony")
+
 public class SonySpeaker implements Speaker{
 	public SonySpeaker() {
 		System.out.println("===> SonySpeaker 객체 생성");

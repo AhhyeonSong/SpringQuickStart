@@ -6,8 +6,8 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	
-	<!-- bean을 등록하지 않고 자동으로 생성
-	 @Component가 설정된 클래스들을 자동으로 객체 생성한다 -->
-	<context:component-scan base-package="polymorphism"></context:component-scan>
-	
+	<beans>
+	<context:component-scan base-package="polymorphism"/>
+	<bean class="polymorphism.SonySpeaker"/>
+	</beans>
 </beans>
