@@ -1,17 +1,16 @@
 package com.springbook.ioc.injection;
 
-import java.util.List;
-import java.util.Set;
+import java.util.Map;
+
+import org.springframework.stereotype.Controller;
 
 public class CollectionBean {
 //	private List<String> addressList;
-	private List<String> addressList;
+	private Map<String, Controller> mappings;
 	
-	public void setAddressList(List<String> addressList) {
-		this.addressList=addressList;
+	public void setAddressList(Map<String, Controller> mappings) {
+		this.mappings=mappings;
 	}
 	
-	public List<String> getAddressList(){
-		return addressList;
-	}
+
 }
