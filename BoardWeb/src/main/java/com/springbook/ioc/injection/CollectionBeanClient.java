@@ -12,10 +12,10 @@ public class CollectionBeanClient {
 				new GenericXmlApplicationContext("applicationContext.xml");
 		
 		CollectionBean bean=(CollectionBean) factory.getBean("collectionBean");
-		List<String> addressList=bean.getAddressList();
-		for(String address : addressList) {
-			System.out.println(address.toString());
-		}
+		//List<String> addressList=bean.getAddressList();
+		//for(String address : addressList) {
+		//	System.out.println(address.toString());
+		//}
 		factory.close();
 	}
 }
