@@ -6,11 +6,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	
-	<!-- 클라이언특라 요청할 LgTV는 @Component 어노테이션으로 처리하고,
-	의존성 주입 역시 @Autowired로 처리한다. 다만 변경될 Speaker만 스프링 설정 파일에
-	<bean> 등록함으로써 자바 코드 수정 없이 XML 수정만으로 Speaker를 교체할 수 있다. -->
-	<beans>
-	<context:component-scan base-package="polymorphism"/>
-	<bean class="polymorphism.SonySpeaker"/>
-	</beans>
+	
+	<context:component-scan base-package="com.springbook.biz"/>
 </beans>
